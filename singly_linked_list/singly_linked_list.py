@@ -23,6 +23,7 @@ class LinkedList:
         self.head = None
         self.tail = None
 
+
     def add_to_tail(self, value):
         # wrap the value in a Node
         new_node = Node(value)

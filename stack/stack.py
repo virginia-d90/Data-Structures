@@ -18,10 +18,7 @@ return elements in Last In First Out order.
 #         self.storage = []
 
 #     def __len__(self):
-#         if self.size == 0:
-#             return 0
-#         else:
-#             return self.size
+#         return self.size
 
 #     def push(self, value):
 #         self.storage.append(value)
