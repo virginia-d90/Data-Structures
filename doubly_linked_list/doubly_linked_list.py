@@ -101,14 +101,23 @@ class DoublyLinkedList:
     List and inserts it as the new head node of the List.
     """
     def move_to_front(self, node):
-        pass
+        if self.length == 0:
+            return 'Your dll is empty'
+        else:
+            self.add_to_head(node.value)
+            self.delete(node)
+
         
     """
     Removes the input node from its current spot in the 
     List and inserts it as the new tail node of the List.
     """
     def move_to_end(self, node):
-        pass
+        if self.length == 0:
+            return 'Your dll is empty'
+        else:
+            self.add_to_tail(node.value)
+            self.delete(node)
 
     """
     Deletes the input node from the List, preserving the 
@@ -129,4 +138,20 @@ class DoublyLinkedList:
     in the List.
     """
     def get_max(self):
-        pass
+        if self.length == 0:
+            return None
+        elif self.length == 1:
+            return self.head.value
+        else:
+            n = self.head
+            t = n.next
+            max = self.head.value
+            while n.next != None:
+                if t.value > n.value:
+                    max = t.value
+                elif n.value > t.value:
+                    max = n.value
+
+                n = n.next
+                t = n.next
+            return max
