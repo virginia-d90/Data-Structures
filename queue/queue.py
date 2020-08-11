@@ -126,7 +126,6 @@ Stretch: What if you could only use instances of your Stack class to implement t
 #         if self.size == 0:
 #             return None
         
-
 #         self.size -= 1
 #         return self.storage.pop(0)
 
