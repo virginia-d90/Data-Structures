@@ -133,6 +133,8 @@ class DoublyLinkedList:
             node.next.prev = node.prev
             self.length -= 1
 
+    ## did not check if there was anything to delete
+
     """
     Finds and returns the maximum value of all the nodes 
     in the List.
